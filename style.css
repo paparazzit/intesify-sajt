@@ -1,0 +1,198 @@
+@import "https://fonts.googleapis.com/css?family=Montserrat:300,400,700|Open+Sans:300,400|Pacifico";
+
+:root {
+	--fontFancy: "Pacifico", sans-serif;
+	--fontFamily: "Montserrat", sans-serif;
+	--orangeFancy: #f6755e;
+	--blue: #25a2c3;
+	--fontSize: 16px;
+}
+
+* {
+	padding: 0;
+	margin: 0;
+	box-sizing: border-box;
+}
+
+body {
+	font-family: var(--fontFamily);
+}
+.container {
+	width: 80%;
+	margin: auto;
+}
+.container::after {
+	display: block;
+	content: "";
+	clear: both;
+}
+
+a {
+	text-decoration: none;
+	color: black;
+}
+p {
+	font-weight: 300;
+	font-size: 1.2rem;
+	color: gray;
+}
+/* header */
+header {
+	background: url(images/banner.jpg);
+	background-position: center;
+	background-size: cover;
+}
+nav {
+	background: white;
+	padding: 10px 0;
+}
+nav h2 {
+	float: left;
+	font-family: var(--fontFancy);
+	color: var(--orangeFancy);
+	font-size: 2rem;
+}
+nav ul {
+	list-style: none;
+	float: right;
+}
+nav ul li {
+	display: inline;
+	line-height: 3.4;
+	margin-right: 20px;
+}
+
+hgroup {
+	text-align: center;
+	padding: 150px 0;
+}
+hgroup h1 {
+	color: var(--blue);
+	margin-bottom: 30px;
+	font-size: 3rem;
+}
+
+hgroup button {
+	text-transform: uppercase;
+	font-size: 1.4rem;
+	color: white;
+	background-color: var(--orangeFancy);
+	border: none;
+	padding: 10px 25px;
+	border-radius: 5px;
+	margin: 50px 0;
+}
+/* services */
+.services .col {
+	width: 33%;
+	float: left;
+	padding: 60px 40px;
+}
+.services .col img {
+	width: 100%;
+	border-radius: 50%;
+}
+.services .col article.left {
+	text-align: right;
+}
+.services .col article h4 {
+	color: var(--blue);
+	font-size: 1.2rem;
+	padding-bottom: 20px;
+}
+.services .col article p {
+	padding-bottom: 30px;
+}
+
+/* Team */
+.team {
+	background: var(--orangeFancy);
+}
+.team article {
+	width: 60%;
+	margin: 0 auto;
+	color: white;
+	text-align: center;
+}
+.team article h2 {
+	font-size: 1.5rem;
+	padding: 60px 0 30px 0;
+}
+.team article blockquote {
+	font-style: italic;
+	font-size: 0.9rem;
+	line-height: 1.5;
+	padding-bottom: 50px;
+}
+
+.team article h4 {
+	font-size: 1rem;
+	line-height: 2;
+}
+.team article p {
+	font-size: 0.9rem;
+	color: white;
+	padding-bottom: 60px;
+}
+/* about */
+
+.about-us article {
+	float: left;
+	width: 27%;
+	margin: 100px 3%;
+	border-radius: 5px;
+	border: 1px solid #dee1e3;
+}
+
+.about-us article img {
+	width: 100%;
+}
+.about-us article .text {
+	padding: 20px 15px;
+}
+.about-us article .text h3 {
+	color: var(--blue);
+	padding-bottom: 20px;
+}
+.about-us article .text p {
+	font-size: 0.95rem;
+	line-height: 1.5;
+}
+/* footer */
+footer {
+	background: var(--blue);
+	text-align: center;
+	padding-top: 100px;
+}
+footer h3 {
+	font-size: 3rem;
+	color: white;
+}
+footer .contact {
+	padding: 40px 0 0 0;
+}
+
+footer .contact i {
+	color: var(--orangeFancy);
+}
+footer .contact a {
+	color: white;
+	padding: 0 20px 0 10px;
+	font-family: var(--fontFamily);
+	font-weight: 300;
+}
+footer .contact::after {
+	display: block;
+	content: "";
+	width: 50%;
+	height: 1px;
+	background: rgb(209, 209, 209);
+	margin: 50px auto 10px auto;
+}
+
+footer p {
+	color: white;
+	font-size: 0.9rem;
+	padding-bottom: 70px;
+	padding-top: 30px;
+}
